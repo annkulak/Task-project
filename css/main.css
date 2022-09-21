@@ -5,9 +5,11 @@
 @import url("./video_page.css");
 @import url("./city_page.css");
 @import url("./city_subpage.css");
+@import url("./photo_slider.css");
 @import url("./excursion_page.css");
 @import url("./apartments_page.css");
-@import url("./photo_slider.css");
+@import url("./more_page.css");
+
 
 @font-face {
     font-family: "Inter";

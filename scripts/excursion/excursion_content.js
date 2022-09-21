@@ -112,7 +112,8 @@ class ExcursionBlock {
         this.buttonForm = document.createElement('button');
         this.buttonForm.classList.add('button-excursion-form');
         this.textExcursionElement.append(this.buttonForm);
-        this.buttonForm.innerHTML = `Узнать больше`;
+        this.buttonForm.innerHTML = `Оставить отзыв`;
+        this.buttonForm.id = `user-comment`;
     }
 
     excursionClick() {

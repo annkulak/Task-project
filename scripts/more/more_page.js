@@ -1,4 +1,6 @@
 import { pageCatalog } from '../interface/page_catalog.js';
+import { createMoreForms } from './more_forms.js';
+import { activeSubmitForms, openCommentaries } from './more_content.js';
 
 let pageNumber = 6;
 let pageIndex = pageNumber - 1;
@@ -24,12 +26,6 @@ function createContentContainer() {
     contentContainer.classList.add('more-page', 'page-content-addition');
 };
 
-function createMorePageInterface() {
-    changePhotoCover();
-    changeMenuDecoration();
-    createContentContainer();
-};
-
 function createTitlePage() {
     const titlePageContainer = document.createElement('div');
     document.querySelector('.page-content-addition').insertAdjacentElement('afterBegin', titlePageContainer);
@@ -47,33 +43,19 @@ function createMoreContainer() {
     excursionBar.classList.add('more-content', 'more-addition');
 };
 
-function createButtonBlock() {
-    const buttonContainer = document.createElement('div');
-    document.querySelector('.page-content-addition').insertAdjacentElement('beforeEnd', buttonContainer);
-    buttonContainer.classList.add('button-page-container');
-
-    const buttonPageBack = document.createElement('button');
-    buttonContainer.insertAdjacentElement('afterBegin', buttonPageBack);
-    buttonPageBack.classList.add('button-dark', 'button-back', 'invert');
-    buttonPageBack.innerHTML = 'Вернуться назад';
-
-    const buttonPageNext = document.createElement('button');
-    buttonContainer.insertAdjacentElement('beforeEnd', buttonPageNext);
-    buttonPageNext.classList.add('button-dark', 'button-next');
-    buttonPageNext.innerHTML = 'Показать ещё';
-};
-
-function createMorePageContent() {
+function createMorePageInterface() {
+    changePhotoCover();
+    changeMenuDecoration();
+    createContentContainer();
     createTitlePage();
     createMoreContainer();
-    createButtonBlock();
 };
 
 function createMorePage() {
     createMorePageInterface();
-    createMorePageContent();
-    addMoreContent();
-    flippingMoreContent();
+    createMoreForms();
+    activeSubmitForms();
+    openCommentaries();
 };
 
 export { createMorePage };

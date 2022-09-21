@@ -94,10 +94,10 @@ function buttonAnimation() {
     };
 };
 
-function moviRestart() {
+function cityMoviRestart() {
     cityMoveStart = 0;
     cityMoveEnd = cityMoveStart + cityMove;
     return;
 };
 
-export { addCityContent, flippingCityContent, moviRestart, changeCityContent };
+export { addCityContent, flippingCityContent, changeCityContent, cityMoviRestart };

@@ -1,6 +1,6 @@
 import { createStartPage } from '../start/start_page.js';
-import { createVideoPage } from '../video/video_page.js';
-import { createCityPage, moviRestart, changeCityContent, createCityPageRouteMap } from '../city/city_page.js';
+import { createVideoPage, moviRestart } from '../video/video_page.js';
+import { createCityPage, cityMoviRestart, changeCityContent, createCityPageRouteMap } from '../city/city_page.js';
 import { createPhotoSlider } from '../slider/slider.js';
 import { removeModalWindow, cleanSlideIndex } from '../slider/slider_flipping.js';
 import { createExcursionPage } from '../excursion/excursion_page.js';
@@ -38,6 +38,8 @@ function clearPage() {
     removeContent();
 };
 
+
+
 function flippingPages() {
     document.addEventListener('click', (event) => {
         switch (event.target.id) {
@@ -52,6 +54,7 @@ function flippingPages() {
             case 'video-page':
                 new Audio('./other/sound/sound-click-3.mp3').play();
                 clearPage();
+                moviRestart();
                 createVideoPage();
                 event.target.classList.add('choice-navigation-button');
                 event.target.focus();
@@ -60,6 +63,7 @@ function flippingPages() {
             case 'Жизнь по-итальянски':
                 new Audio('./other/sound/sound-click-3.mp3').play();
                 clearPage();
+                moviRestart();
                 createVideoPage();
                 event.target.classList.add('choice-navigation-button');
                 window.scrollTo(0, 0);
@@ -68,7 +72,7 @@ function flippingPages() {
             case 'city-page':
                 new Audio('./other/sound/sound-click-3.mp3').play();
                 clearPage();
-                moviRestart();
+                cityMoviRestart();
                 changeCityContent();
                 createCityPage();
                 event.target.classList.add('choice-navigation-button');
@@ -78,7 +82,7 @@ function flippingPages() {
             case 'Посмотреть все города':
                 new Audio('./other/sound/sound-click-3.mp3').play();
                 clearPage();
-                moviRestart();
+                cityMoviRestart();
                 changeCityContent();
                 createCityPage();
                 event.target.classList.add('choice-navigation-button');
@@ -88,7 +92,7 @@ function flippingPages() {
             case 'sub-button-city-back':
                 new Audio('./other/sound/sound-click-3.mp3').play();
                 clearPage();
-                moviRestart();
+                cityMoviRestart();
                 changeCityContent();
                 createCityPage();
                 event.target.classList.add('choice-navigation-button');
@@ -137,6 +141,13 @@ function flippingPages() {
                 clearPage();
                 createMorePage();
                 event.target.classList.add('choice-navigation-button');
+                event.target.focus();
+                break;
+
+            case 'user-comment':
+                clearPage();
+                createMorePage();
+                document.getElementById('more-page').add('choice-navigation-button');
                 event.target.focus();
                 break;
 

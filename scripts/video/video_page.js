@@ -1,5 +1,5 @@
 import { pageCatalog } from '../interface/page_catalog.js';
-import { getVideoContent, flippingVideoContent } from './video_content.js';
+import { getVideoContent, flippingVideoContent, moviRestart } from './video_content.js';
 
 let pageNumber = 2;
 let pageIndex = pageNumber - 1;
@@ -73,4 +73,4 @@ function createVideoPage() {
     flippingVideoContent();
 };
 
-export { createVideoPage };
+export { createVideoPage, moviRestart };

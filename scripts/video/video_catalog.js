@@ -152,5 +152,81 @@ export const videoCatalog = [
         videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/rPKO0KcDoK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         place: 'Рим',
     },
-];
 
+    {
+        name: 'Лучшие города Италии – Рим, Флоренция и Тоскана',
+        yt_code: 'H7YJgLYlSXQ',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/H7YJgLYlSXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Италия',
+    },
+
+    {
+        name: '5 самых интересных мест в Вероне',
+        yt_code: 'iB5Kj3092Mg',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/iB5Kj3092Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Верона',
+    },
+
+    {
+        name: 'Орёл и Решка. Доломитовые Альпы.',
+        yt_code: 'OI2PipfDsH8',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/OI2PipfDsH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Италия',
+    },
+
+    {
+        name: 'Орел и решка. Перезагрузка - Рим',
+        yt_code: 'Zkz7_GRMUy4',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/Zkz7_GRMUy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Рим',
+    },
+
+    {
+        name: 'Орел и решка. Тоскана',
+        yt_code: 's9DcbU1gXD0',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/s9DcbU1gXD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Италия',
+    },
+
+    {
+        name: 'Доломиты',
+        yt_code: 'gR-WYKngDSg',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/gR-WYKngDSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Италия',
+    },
+
+    {
+        name: 'Болонья',
+        yt_code: 'zu5w48qbQ6k',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/zu5w48qbQ6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Болонья',
+    },
+
+    {
+        name: 'Поля Тосканы / Италия / Сиена / Пиза',
+        yt_code: 'ZNK6qWnIgo4',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/ZNK6qWnIgo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Италия',
+    },
+
+    {
+        name: 'Риомаджоре / Манаролла / Корнилья / Монтероссо / Вернацца',
+        yt_code: 'qdwA_1HvZcw',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/qdwA_1HvZcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Италия',
+    },
+
+    {
+        name: 'Италия: Апулия',
+        yt_code: '9V4P1p3tdLU',
+        videoLink: '<iframe width="345" height="194.0625" src="https://www.youtube.com/embed/9V4P1p3tdLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Италия',
+    },
+
+    {
+        name: 'Италия: Милан',
+        yt_code: 'wvtFOlyhUpQ',
+        videoLink: '<iframe width="345" height="194.0625" <iframe width="560" height="315" src="https://www.youtube.com/embed/wvtFOlyhUpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        place: 'Италия',
+    },
+];

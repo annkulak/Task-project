@@ -59,7 +59,7 @@ class VideoBlock {
 };
 
 const videoContent = [];
-let move = 9;
+let move = 12;
 let moveStart = 0;
 let moveEnd = moveStart + move;
 let moveMaximum = videoCatalog.length - 1;
@@ -164,4 +164,10 @@ function buttonAnimation() {
     };
 };
 
-export { getVideoContent, flippingVideoContent };
+function moviRestart() {
+    moveStart = 0;
+    moveEnd = moveStart + move;
+    return;
+};
+
+export { getVideoContent, flippingVideoContent, moviRestart };

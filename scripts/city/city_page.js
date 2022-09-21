@@ -1,5 +1,5 @@
 import { pageCatalog } from '../interface/page_catalog.js';
-import { addCityContent, flippingCityContent, moviRestart, changeCityContent } from './city_action.js';
+import { addCityContent, flippingCityContent, cityMoviRestart, changeCityContent } from './city_action.js';
 import { addItalyMap, addRouteMap } from '../utilites/map_vidget.js';
 
 let pageNumber = 3;
@@ -127,4 +127,4 @@ function createCityPage() {
     createMapVidget();
 };
 
-export { createCityPage, createCityPageRouteMap, moviRestart, changeCityContent };
+export { createCityPage, createCityPageRouteMap, cityMoviRestart, changeCityContent };
