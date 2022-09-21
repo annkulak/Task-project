@@ -1,0 +1,182 @@
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./start_page.css");
+@import url("./video_page.css");
+@import url("./city_page.css");
+@import url("./city_subpage.css");
+@import url("./photo_slider.css");
+@import url("./excursion_page.css");
+@import url("./apartments_page.css");
+@import url("./more_page.css");
+
+
+@font-face {
+    font-family: "Inter";
+    src: url("../other/fonts/Inter/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../other/fonts/Lato/Lato-Regular.ttf");
+}
+
+html {
+    display: block;
+    margin: 0 auto;
+}
+
+:root {
+    --color-dark: #000000;
+    --color-medium-dark: #121214;
+    --color-accent-green: #1CA32A;
+    --color-accent-red: #FB0E0E;
+    --color-accent-coral: #FD7D7D;
+    --color-accent-yellow: #9B9610;
+    --color-accent-light: #D9D9D9;
+    --color-medium-light: #949695;
+    --color-light: #f4f4f4;
+    --color-button-dark: #1393DB;
+    --color-button-light: #C8D5DC;
+    --color-button-extra-light: #E3E3E3;
+    --text-color-light: #adb7bd;
+    --shadow-light-medium: rgba(255, 255, 255, 0.2);
+    --ya-map-color: #454545;
+    font-family: "Inter";
+    line-height: 120%;
+}
+
+section,
+article,
+header,
+footer,
+nav,
+div,
+form,
+input,
+button,
+h1,
+ol,
+ul,
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    flex-direction: column;
+    position: relative;
+    background-image: url('../images/wrapper-photocover-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.interface {
+    flex-direction: column;
+    max-width: 1134px;
+    min-width: 320px;
+    height: max-content;
+    z-index: 10;
+}
+
+.dark {
+    color: var(--color-light);
+    background: var(--color-medium-dark);
+}
+
+.page-container {
+    min-height: 58vh;
+    align-items: flex-start;
+    height: max-content;
+}
+
+.title-page {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 120%;
+    width: 100%;
+    height: 5rem;
+}
+
+.content-container {
+    height: max-content;
+}
+
+.button-page-container {
+    height: 120px;
+}
+
+button {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 120%;
+    color: var(--color-light);
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
+
+.button-dark {
+    background: var(--color-button-dark);
+    margin: 0 20px;
+    width: 210px;
+    height: 40px;
+    transition: .3s;
+}
+
+.button-dark:hover {
+    background: var(--color-button-extra-light);
+    color: var(--color-dark);
+    transition: .3s;
+}
+
+.button-dark.invert {
+    opacity: 0.5;
+}
+
+.button-light {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--color-dark);
+    background: var(--color-button-light);
+    opacity: 0.8;
+    margin: 0 10px;
+    width: 210px;
+    height: 40px;
+    transition: .3s;
+}
+
+.button-light:hover {
+    background: var(--color-button-extra-light);
+    color: var(--color-dark);
+    transition: .3s;
+}
+
+.ya_map {
+    font-family: "Inter";
+    font-size: 12px;
+    color: var(--ya-map-color);
+}
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+.ymaps-2-1-79-float-button-icon.ymaps-2-1-79-float-button-icon_icon_expand {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 970px) {
+    button {
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 115%;
+    }
+}

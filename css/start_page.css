@@ -1,0 +1,315 @@
+.main-page {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    height: 2150px;
+}
+
+.country-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2%;
+    width: 96%;
+    height: 24.2%;
+}
+
+.video-vidget-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80.56%;
+    height: 94.23%;
+}
+
+.blackout {
+    position: absolute;
+    background: var(--color-dark);
+    opacity: 0.5;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+}
+
+.video-vidget-title {
+    width: 100%;
+    height: 90px;
+    z-index: 5;
+}
+
+.video-vidget-title-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 120%;
+    align-items: center;
+    text-align: right;
+    opacity: 0.7;
+    width: 75.3%;
+    height: 100%;
+}
+
+.video-vidget-button-block {
+    width: 24.7%;
+    height: 100%;
+}
+
+.video-vidget-content {
+    position: absolute;
+    width: max-content;
+    height: auto;
+}
+
+.main-youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+}
+
+.main-youtube .play {
+    background: url('../other/icons/youtube-play-btn.png') no-repeat;
+    background-position: 0 -50px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 50px;
+    width: 69px;
+    transition: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.main-youtube:hover .play {
+    background-position: 0 0;
+}
+
+.location-vidget-container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 19.3%;
+    height: 94.23%;
+}
+
+.weather-vidget {
+    width: 100%;
+    height: 49%;
+    text-shadow: 0 1px 1px var(--button-shadow-color);
+    border: 1px solid var(--background-button-color);
+    border-radius: 4px;
+    background: var(--background-button-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1));
+    background: -webkit-linear-gradient(right, #232526, #343536);
+    background: linear-gradient(to left, #232526, #313233);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2), 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 2px rgba(73, 72, 72, 0.7);
+    cursor: pointer;
+}
+
+.weather-vidget:hover {
+    opacity: 0.8;
+}
+
+#mini-weather {
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.weather-city-block {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    color: var(--color-medium-light);
+    height: max-content;
+}
+
+.weather-city {
+    font-size: 2rem;
+    margin: 3% 0;
+}
+
+.weather-description {
+    font-size: 1rem;
+    color: var(--color-medium-light);
+}
+
+.weather-temperature-block {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: max-content;
+}
+
+.temperature {
+    font-size: 3.34rem;
+    color: var(--color-light);
+    box-sizing: border-box;
+    margin: 5% 0;
+    height: 50%;
+}
+
+.min-max-temperatures {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: var(--color-medium-light);
+    margin: 3% 0;
+    height: max-content;
+}
+
+.mini-map-vidget {
+    border-radius: 3px;
+    width: 100%;
+    height: 49%;
+}
+
+#mini-map {
+    width: 100%;
+    height: 100%;
+}
+
+.city-bar {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding: 0 2%;
+    min-height: 510px;
+    height: max-content;
+}
+
+.bar-title-container {
+    max-height: 80px;
+}
+
+.bar-title-text {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 120%;
+}
+
+.city-bar>.city-content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 350px;
+    height: max-content;
+}
+
+.bar-button-container {
+    align-items: flex-end;
+    max-height: 80px;
+}
+
+.excursion-bar {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 0;
+    min-height: 570px;
+    height: max-content;
+}
+
+.bar-picture-container {
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../images/photocover-excursion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 53.57%;
+    height: max-content;
+}
+
+.picture-title-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    height: 30px;
+}
+
+.picture-subtitle-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    height: 25px;
+}
+
+.excursion-bar>.bar-picture-container>.bar-button-block {
+    position: relative;
+    top: 25%;
+    height: max-content;
+}
+
+.bar-motivation-container {
+    min-height: 32.14%;
+    height: max-content;
+}
+
+.motivation-block {
+    flex-direction: column;
+    justify-content: center;
+    width: 27%;
+    height: 67%;
+}
+
+.motivation-quote {
+    flex-direction: column;
+    align-items: center;
+    font-size: 100%;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    height: 35%;
+}
+
+.motivation-block:nth-child(1)>span {
+    color: var(--color-accent-green);
+}
+
+.motivation-block:nth-child(3)>span {
+    color: var(--color-accent-red);
+}
+
+.motivation-line-block {
+    background-color: var(--color-light);
+    opacity: 0.6;
+    margin: 10px 0;
+    width: 35%;
+    height: 1%;
+}
+
+.motivation-advantage {
+    flex-direction: column;
+    align-items: center;
+    font-size: 80%;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    width: 80%;
+    height: max-content;
+}
+
+.apartments-bar {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding: 0 2%;
+    min-height: 370px;
+    height: max-content;
+}
+
+.apartments-bar>.apartments-content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: 210px;
+}

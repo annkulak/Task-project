@@ -1,0 +1,89 @@
+.apartments-page {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px 2%;
+    height: max-content;
+}
+
+.apartments-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    height: max-content;
+}
+
+.apartment-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 3px;
+    max-height: 260px;
+}
+
+.last-apartments-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: max-content;
+}
+
+.last-apartments-content>article.apartment-container {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 3px;
+    margin: 5px 0;
+    width: 19%;
+    height: 13vw;
+    max-width: 210px;
+    max-height: 180px;
+}
+
+.apart-link {
+    position: absolute;
+    cursor: pointer;
+    width: 20vw;
+    height: 15vw;
+    max-width: 260px;
+    max-height: 200px;
+    z-index: 20;
+}
+
+.apartment-picture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.title-apartment-block {
+    position: absolute;
+    flex-direction: column;
+    background: var(--color-dark);
+    opacity: 0.6;
+    padding-left: 15px;
+    height: 20%;
+}
+
+.apartment-city-name {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5px;
+    height: 55%;
+}
+
+.apartment-price {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+    height: 45%;
+}
